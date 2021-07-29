@@ -9,7 +9,7 @@
        para1.textContent ="Loading..."
        para2.textContent = ""
        const location = searchField.value;
-       fetch(`http://localhost:3200/weather?address=${location}`)
+       fetch(`/weather?address=${location}`)
        .then(res => res.json())
        .then(result => {
            if(result.error){

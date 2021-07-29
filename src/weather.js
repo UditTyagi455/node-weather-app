@@ -6,6 +6,7 @@ const geocode =require('./utility/geoCoding')
 
 
 const app =express();
+const port =process.env.port || 3200
 
 const publicDirectory = path.join(__dirname,"../public");
 const partialPath = path.join(__dirname,"../src/templetes/partials");
@@ -95,6 +96,6 @@ app.get("*",(req,res) =>{
     })
 })
 
-app.listen(3200,()=>{
-    console.log("Listing the port 3200....");
+app.listen(port,()=>{
+    console.log("Listing the port "+port+"....");
 })
