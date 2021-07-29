@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel = "icon" href = 
+    "https://image.flaticon.com/icons/png/512/3314/3314019.png" 
+        type = "image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+
+    <div class="main-content">
+         {{>header}}
+         <p>This site show the weather</p>
+         <form >
+             <input type="text" placeholder="location">
+             <button>search</button>
+         </form>
+
+         <p id="msg-1"></p>
+         <p id="msg-2"></p>
+    </div>
+   
+    {{>foter}}
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
