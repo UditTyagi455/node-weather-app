@@ -6,7 +6,7 @@ const geocode =require('./utility/geoCoding')
 
 
 const app =express();
-const port =process.env.port || 3200
+const port =process.env.PORT || 3200
 
 const publicDirectory = path.join(__dirname,"../public");
 const partialPath = path.join(__dirname,"../src/templetes/partials");
